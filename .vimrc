@@ -50,3 +50,8 @@ let g:NERDTreeDirArrows=0
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+" Add empty line before or after cursor in normal mode
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+
