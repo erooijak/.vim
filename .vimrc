@@ -45,3 +45,8 @@ execute pathogen#infect()
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:NERDTreeDirArrows=0
+
+" 4 spaces for tab
+set expandtab
+set tabstop=4
+set shiftwidth=4
