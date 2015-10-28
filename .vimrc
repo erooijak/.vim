@@ -17,6 +17,10 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
             \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
 imap <C-@> <C-Space>
 
+" Surround word with quotes (TODO: replace with surround.vim)
+:nnoremap c' ciw'<C-R><C-O>"'<Esc>
+:nnoremap c" ciw"<C-R><C-O>""<Esc>
+
 " Ruby and Rails preferences
 set term=xterm-256color"
 colorscheme wombat256mod
