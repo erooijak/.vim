@@ -18,8 +18,8 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 imap <C-@> <C-Space>
 
 " Surround word with quotes (TODO: replace with surround.vim)
-:nnoremap c' ciw'<C-R><C-O>"'<Esc>
-:nnoremap c" ciw"<C-R><C-O>""<Esc>
+nnoremap c' ciw'<C-R><C-O>"'<Esc>
+nnoremap c" ciw"<C-R><C-O>""<Esc>
 
 " Ruby and Rails preferences
 set term=xterm-256color"
@@ -30,7 +30,7 @@ set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
 autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" || "<php \r %>" " displays <%%> correctly both PHP and Rails
-:set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$commands 
+set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$commands 
 
 " Transparent background
 hi Normal          ctermfg=252 ctermbg=none
