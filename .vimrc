@@ -9,7 +9,6 @@ call vundle#rc()
 " 'user/repository' format
 Plugin 'gmarik/vundle'
 
-" We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
@@ -17,8 +16,10 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'Buffergator'
 
 " Get some nice colors
-"Plugin 'vim-scripts/delek.vim'
 Plugin 'chriskempson/base16-vim'
+
+" tmux!
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
@@ -48,8 +49,8 @@ set tabstop=4
 set shiftwidth=4
 
 " Add empty line before or after cursor in normal mode
-map <Enter> o<ESC>
 map <S-Enter> O<ESC>
+map <Enter> o<ESC>
 
 " NERDTree navigation
 autocmd StdinReadPre * let s:std_in=1
