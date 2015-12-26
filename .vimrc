@@ -1,4 +1,6 @@
 set nocompatible
+syntax enable
+
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -15,9 +17,6 @@ Plugin 'scrooloose/nerdtree.git'
 " by name as it appears on the site
 Plugin 'Buffergator'
 
-" Get some nice colors
-Plugin 'altercation/vim-colors-solarized'
-
 " tmux!
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -27,15 +26,15 @@ Plugin 'myusuf3/numbers.vim'
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
-" Make pretty
-set background=dark
-colorscheme solarized
-
 set guifont=Monaco:h12
 let g:NERDTreeWinPos = "left"
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
+
+" Make pretty
+set t_Co=256 " Set temrinal color scheme to support 256 colors
+colorscheme wombat256
 
 " Highlight search results
 set hls
