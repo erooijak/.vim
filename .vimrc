@@ -1,6 +1,5 @@
 set nocompatible
 filetype off
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -9,6 +8,7 @@ call vundle#rc()
 " 'user/repository' format
 Plugin 'gmarik/vundle'
 
+" Navigation
 Plugin 'scrooloose/nerdtree.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
@@ -16,17 +16,20 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'Buffergator'
 
 " Get some nice colors
-Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " tmux!
 Plugin 'christoomey/vim-tmux-navigator'
+
+" Alternate between relative numbering (relativenumber) and absolute numbering (number) for the active window
+Plugin 'myusuf3/numbers.vim'
 
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
 " Make pretty
 set background=dark
-colorscheme base16-default
+colorscheme solarized
 
 set guifont=Monaco:h12
 let g:NERDTreeWinPos = "left"
@@ -64,4 +67,5 @@ nnoremap ; :
 " User defined commands
 com Light execute "set background=light"
 com Dark execute "set background=dark"
+com NERD execute "NERDTree"
 
