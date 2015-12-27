@@ -71,5 +71,4 @@ nnoremap ; :
 " User defined commands
 com Light execute "set background=light"
 com Dark execute "set background=dark"
-com NERD execute "NERDTree"
-
+map <C-n> :NERDTreeToggle<CR>
