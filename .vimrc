@@ -29,6 +29,8 @@ Plugin 'vim-scripts/restore_view.vim'
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
+set cindent
+
 set foldcolumn=3
 
 set guifont=Monaco:h12
