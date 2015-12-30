@@ -26,6 +26,9 @@ Plugin 'myusuf3/numbers.vim'
 " Restore folds and cursor position automatically
 Plugin 'vim-scripts/restore_view.vim'
 
+" Surround
+Plugin 'tpope/vim-surround.git'
+
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
@@ -69,6 +72,7 @@ map <Enter> o<ESC>
 " Remap ; to : and vice versa to not have to press SHIFT to go to command mode
 nnoremap : ;
 nnoremap ; :
+nnoremap <C-c> <C-c> :noh <ENTER>
 
 " User defined commands
 com Light execute "set background=light"
