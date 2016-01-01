@@ -29,6 +29,12 @@ Plugin 'vim-scripts/restore_view.vim'
 " Surround
 Plugin 'tpope/vim-surround.git'
 
+" Improved status line
+Bundle 'bling/vim-airline'
+
+" git integration
+Bundle 'tpop/vim-fugitive.git'
+
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
@@ -72,7 +78,12 @@ map <Enter> o<ESC>
 " Remap ; to : and vice versa to not have to press SHIFT to go to command mode
 nnoremap : ;
 nnoremap ; :
+
+" Remap CTRL-c to include removal of search highlight
 nnoremap <C-c> <C-c> :noh <ENTER>
+
+" CTRL-I to reindent whole page
+nnoremap <C-i> gg=G
 
 " User defined commands
 com Light execute "set background=light"
