@@ -83,7 +83,7 @@ nnoremap ; :
 nnoremap <C-c> <C-c> :noh <ENTER>
 
 " CTRL-I to reindent whole page
-nnoremap <C-i> gg=G
+nnoremap <C-i> gg=G ``
 
 " User defined commands
 com Light execute "set background=light"
