@@ -1,0 +1,18 @@
+" Add empty line before or after cursor in normal mode
+map <S-Enter> O<ESC>
+map <Enter> o<ESC>
+
+" Relative line numbers
+set rnu
+
+" Remap ; to : and vice versa to not have to press SHIFT to go to command mode
+nnoremap : ;
+nnoremap ; :
+
+" Copy until the end of the line
+noremap Y y$
+
+" Indent everything
+noremap <C-I> ggvG=
+
+set surround
