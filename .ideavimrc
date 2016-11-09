@@ -2,8 +2,9 @@
 map <S-Enter> O<ESC>
 map <Enter> o<ESC>
 
-" Relative line numbers
+" Relative line numbers and line number
 set rnu
+set nu
 
 " Remap ; to : and vice versa to not have to press SHIFT to go to command mode
 nnoremap : ;
