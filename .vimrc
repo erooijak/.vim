@@ -229,8 +229,6 @@ map <F11> :NERDTree<cr>
 
 
 nnoremap <C-x> :Eval<CR>
-nnoremap E :%Eval<CR> 
-
 
 nnoremap <D-]> =a{
 
