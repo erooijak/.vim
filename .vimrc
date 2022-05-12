@@ -873,4 +873,8 @@ if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
   endif
 endif
 
+" Highlight trailing whitespace
+hi TrailingWhitespace ctermbg=red guibg=red
+call matchadd("TrailingWhitespace", '\v\s+$')
+
 " vim:set ft=vim sw=2 sts=2 et:
