@@ -1,8 +1,10 @@
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
 set nocompatible
+
 syntax enable
 
 set cindent
-
 set foldcolumn=3
 
 set guifont=Monaco:h12
@@ -64,10 +66,6 @@ map <C-n> :NERDTreeToggle<CR>
 if v:progname =~? "evim"
   finish
 endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
