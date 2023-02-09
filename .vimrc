@@ -40,7 +40,8 @@ map <Enter> o<ESC>
 nnoremap : ;
 nnoremap ; :
 
-" jk and kj to ESC
+" jj, jk and kj to ESC
+imap jj <Esc>
 imap jk <Esc>
 imap kj <Esc>
 
