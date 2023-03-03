@@ -40,11 +40,6 @@ map <Enter> o<ESC>
 nnoremap : ;
 nnoremap ; :
 
-" jj, jk and kj to ESC
-imap jj <Esc>
-imap jk <Esc>
-imap kj <Esc>
-
 " Remap CTRL-c to include removal of search highlight
 nnoremap <C-c> <C-c> :noh <ENTER>
 
